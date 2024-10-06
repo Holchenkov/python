@@ -16,7 +16,7 @@ print(cities[-5])
 #Задание 4 
 quote = "The quick brown fox jumps over the lazy dog" 
 print(quote[0:5])
-print(quote[10:20])
+print(quote[9:19])
 print(quote[::2]) 
 print(quote[::-1]) 
 #Задание 5 
