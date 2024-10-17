@@ -29,7 +29,7 @@ else:
     print("Неверная операция.")
 #Задание 4 
 x = int(input("Введите число: "))
-if x % 2 == 0 and (str(x).endswith('2') or str(x).endswith('6')):
+if x % 2 == 0 and "x"[-1] == 2 or "x"[-1] == 6:
     print("True")
 else:    
     print("False")
