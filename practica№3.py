@@ -33,3 +33,19 @@ elif x == "Треугольник":
     print("Площадь вашей комнаты: " , (v * b)/2) 
 else: 
     print("Неверный ввод")
+#Задание 5
+x = int(input("Введите количество программистов: "))
+if x % 10 == 1 and x % 100 != 11:
+    print(x , "программист")
+elif (x % 10 == 2 or x % 10 == 3 or x % 10 == 4) and (x % 100 != 12 or x % 100 != 13 or x % 100 != 14):
+    print(x, "программиста")
+else:
+    print(x, "программистов")
+#Задание 6
+ticket_number = input("Введите номер билета: ")
+x = int(ticket_number[0]) + int(ticket_number[1]) + int(ticket_number[2]) 
+y = int(ticket_number[-1]) + int(ticket_number[-2]) + int(ticket_number[-3])
+if x == y:
+    print("Счастливый")
+else:
+    print("Не счастливый")
