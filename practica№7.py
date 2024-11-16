@@ -63,3 +63,14 @@ for g in matrix:
             g[i] = len(mat)
             summ += g[i]
 print(summ)
+#Задание 5
+matrix = [
+        [1, 2, 3],
+        [4, 5, 6],
+        [7, 8, 9]
+        ]
+print("matrix =")
+for i in matrix:
+    print(i)
+x = matrix[0][0] + matrix[1][1] + matrix[2][2]
+print(x)
