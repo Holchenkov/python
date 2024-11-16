@@ -55,14 +55,14 @@ matrix = [
     [-446, 281, -80],
     [465, 432, -122],
     [13, 'error', 8]
-]
-summ = []
+    ]
+summ = 0
 for g in matrix:
     for i, mat in enumerate(g):
         if isinstance(mat, str):
             g[i] = len(mat)
-            summ += g[i]
-print(summ)
+        summ += g[i]
+print("Сумма всех элементов матрицы: ", summ)
 #Задание 5
 matrix = [[1, 2, 3],
           [4, 5, 6],
