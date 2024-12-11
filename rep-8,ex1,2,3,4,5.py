@@ -52,17 +52,18 @@ while True:
 import time, random
 from time import sleep
 
+print("Добро пожаловать в игру 'Бросок кубика для двоих'!")
 kybik = ("[       ]\n"
          "[   *   ]\n"
          "[       ]",
 
-        "[   *   ]\n"
+        "[*      ]\n"
         "[       ]\n"
-        "[   *   ]",
+        "[      *]",
 
+        "[*      ]\n"
         "[   *   ]\n"
-        "[   *   ]\n"
-        "[   *   ]",
+        "[      *]",
 
         "[*     *]\n"
         "[       ]\n"
@@ -74,30 +75,18 @@ kybik = ("[       ]\n"
 
         "[*     *]\n"
         "[*     *]\n"
-        "[*     *]",
+        "[*     *]",)
 
-        "[*     *]\n"
-        "[*  *  *]\n"
-        "[*     *]",
-
-        "[*  *  *]\n"
-        "[*     *]\n"
-        "[*  *  *]",
-
-        "[*  *  *]\n"
-        "[*  *  *]\n"
-        "[*  *  *]",)
-print("Добро пожаловать в игру 'Бросок кубика для двоих'!")
 while True:
     print("Бросок кубика для компьютера... ")
     sleep(3)
-    comp = random.randint(0,8)
+    comp = random.randint(0,5)
     print(f"Выпало число: {comp +1}")
     print(kybik[comp])
     input("Теперь ваша очередь! Нажмите Enter для броска кубика.")
     print("Бросок кубика для вас... ")
     sleep(3)
-    people = random.randint(0,8)
+    people = random.randint(0,5)
     print(f"Выпало число: {people + 1}")
     print(kybik[people])
     if comp > people:
