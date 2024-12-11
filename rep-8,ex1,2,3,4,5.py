@@ -28,29 +28,28 @@ future = today + datetime.timedelta(days=7)
 print(f"Дата через 7 дней от текущего момента - {future}")
 #Задание 4
 import random, time
-from time import sleep
+from colorama import Fore, Style
 
 print("Программа генерирует число... ")
-sleep(3)
+time.sleep(3)
 random_chislo = random.randint(0,10)
 q = 0
 while True:
     vvod = int(input("Введите число: "))
     if vvod > 10:
-        print("Введите число от 0 до 10.")
+        print(Fore.RED + "Введите число от 0 до 10." + Style.RESET_ALL)
     elif vvod > random_chislo:
-        print("Ваше число больше.")
+        print(Fore.RED + "Ваше число больше." + Style.RESET_ALL)
         q += 1
     elif vvod < random_chislo:
-        print("Ваше число меньше.")
+        print(Fore.RED + "Ваше число меньше." + Style.RESET_ALL)
         q += 1
     else:
-        print("Вы угадали!")
+        print(Fore.GREEN + "Вы угадали!" + Style.RESET_ALL)
         print(f"Попыток было: {q}")
         break
 #Задание 5
 import time, random
-from time import sleep
 
 print("Добро пожаловать в игру 'Бросок кубика для двоих'!")
 kybik = ("[       ]\n"
@@ -79,13 +78,13 @@ kybik = ("[       ]\n"
 
 while True:
     print("Бросок кубика для компьютера... ")
-    sleep(3)
+    time.sleep(3)
     comp = random.randint(0,5)
     print(f"Выпало число: {comp +1}")
     print(kybik[comp])
     input("Теперь ваша очередь! Нажмите Enter для броска кубика.")
     print("Бросок кубика для вас... ")
-    sleep(3)
+    time.sleep(3)
     people = random.randint(0,5)
     print(f"Выпало число: {people + 1}")
     print(kybik[people])
@@ -97,4 +96,4 @@ while True:
         break
     else:
         print("Ничья! Бросаем кубик снова...")
-        sleep(3)
+        time.sleep(3)
